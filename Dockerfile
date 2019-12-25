@@ -96,9 +96,6 @@ RUN cd /tmp && \
     make install && \
     rm -rf /tmp/xdebug
 
-# Add configuration files
-COPY image-files/ /
-
 # Add GITHUB_API_TOKEN support for composer
 RUN chmod 700 \
         /usr/local/bin/docker-php-entrypoint \
