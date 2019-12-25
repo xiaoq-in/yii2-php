@@ -9,7 +9,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && \
     apt-get -y install \
         gnupg2 && \
-    apt-key update && \
     apt-get update && \
     apt-get -y install \
             g++ \
